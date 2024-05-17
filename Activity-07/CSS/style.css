@@ -4,7 +4,7 @@
         header {background-color: darksalmon;}
         h1 {color: #e012d3; text-align: center;}
         #mainHeader {color: cornflowerblue; text-align: center;}
-        .highlight { background-color: yellow; }
+        .highlight { background-color: yellow; text-align: center;}
         section {margin: 0 auto; width: 80%;}
         img {width: 100%; border: 3px solid pink; border-radius: 15px; box-shadow: 5px 5px 15px grey;}
         footer {background-color: darksalmon;}
