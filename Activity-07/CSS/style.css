@@ -1,12 +1,11 @@
 <style> 
-        /* This style gives the p with the color blue */ p {color: blue;}
-        /* Sets the background color of the body */ body {background-color: #d1a21f;}
-        /* Sets the background color of the header */ header {background-color: darksalmon;}
-        /* Sets the color of h1 elements and Aligns text to center */ h1 {color: #e012d3; text-align: center;}
-        /* Sets the color of h3 elements and Aligns h3 elements to center */ #mainHeader {color: cornflowerblue; text-align: center;}
-        /* This style gives a yellow background to highlighted content */ .highlight { background-color: yellow; }
-        /* Centers the section horizontally and Sets the width of the section */ section {margin: 0 auto; width: 80%;}
-        /* Makes the image responsive and adds a pink border to the image Rounds the corners of the image and Adds a shadow effect to the image*/ 
+        p {color: rgba(0, 0, 255, 0.881);}
+        body {background-color: #d1a21f;}
+        header {background-color: darksalmon;}
+        h1 {color: #e012d3; text-align: center;}
+        #mainHeader {color: cornflowerblue; text-align: center;}
+        .highlight { background-color: yellow; }
+        section {margin: 0 auto; width: 80%;}
         img {width: 100%; border: 3px solid pink; border-radius: 15px; box-shadow: 5px 5px 15px grey;}
-        /* Sets the background color of the footer */ footer {background-color: darksalmon;}
+        footer {background-color: darksalmon;}
 </style>
