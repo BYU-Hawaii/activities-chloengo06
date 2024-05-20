@@ -8,6 +8,10 @@ body {
     background-size: cover;
     background-attachment: fixed;}
 
+    br {
+        margin: ;
+        padding: 10;}
+
 header, nav, footer {
     background-color: #52a15c;
     color: rgb(239, 221, 17);
@@ -15,6 +19,7 @@ header, nav, footer {
     padding: 1em 0;}
 
 header h1 {margin: 0;}
+h2 {text-align: center;}
 
 nav ul {
     list-style: none;
@@ -34,6 +39,14 @@ nav ul li a {
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
+
+figure {
+    text-align: center; /* Center-align the content of the figure element */}
+
+figcaption {
+    display: block; /* Ensure the figcaption takes up the full width */
+    margin: 0 auto; /* Center the figcaption horizontally */
+    text-align: center; /* Center-align the text within the figcaption */}
 
 section {
     padding: 20px;
