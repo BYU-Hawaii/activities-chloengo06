@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: #bcb911;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/vietnam.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;}
+
+header, nav, footer {
+    background-color: #248a30;
+    color: rgb(239, 221, 17);
+    text-align: center;
+    padding: 1em 0;}
+
+header h1 {margin: 0;}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;}
+
+nav ul li {
+    margin: 0 15px;}
+
+nav ul li a {
+    color: rgb(209, 237, 149);
+    text-decoration: none;
+    font-weight: bold;padding: 5px 1px; /* Padding inside the box */
+    border: 1px solid rgb(178, 214, 32); /* Border around each link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+section {
+    padding: 20px;
+    background: rgba(37, 63, 74, 0.8);
+    margin: 20px;
+    border-radius: 8px;}
+
+section ul {
+    list-style: none;
+    padding: 0;}
+
+    section ul li {
+        display: flex;
+        flex-direction: column; /* Arrange items in a column */
+        align-items: center; /* Center align the items */
+        margin: 20px 0; /* Space between list items */}
+
+    section ul li img {
+        margin-right: 10px;
+        width: 350px; 
+        height: 350px;} 
+
+footer {
+    padding: 10px 0;}
+
+
