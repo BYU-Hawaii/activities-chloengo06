@@ -19,6 +19,7 @@ header h1 {margin: 0;}
 h2 {text-align: center;}
 
 nav ul {
+    color: #4f3222;
     list-style: none;
     padding: 0;
     margin: 0;
