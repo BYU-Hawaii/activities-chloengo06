@@ -9,7 +9,7 @@ body {
     background-attachment: fixed;}
 
 header, nav, footer {
-    background-color: #248a30;
+    background-color: #52a15c;
     color: rgb(239, 221, 17);
     text-align: center;
     padding: 1em 0;}
@@ -27,7 +27,7 @@ nav ul li {
     margin: 0 15px;}
 
 nav ul li a {
-    color: rgb(209, 237, 149);
+    color: rgb(188, 242, 73);
     text-decoration: none;
     font-weight: bold;padding: 5px 1px; /* Padding inside the box */
     border: 1px solid rgb(178, 214, 32); /* Border around each link */
@@ -41,9 +41,8 @@ section {
     margin: 20px;
     border-radius: 8px;}
 
-section ul {
-    list-style: none;
-    padding: 0;}
+    .centered-list {text-align: center;}
+    
 
     section ul li {
         display: flex;
@@ -51,11 +50,12 @@ section ul {
         align-items: center; /* Center align the items */
         margin: 20px 0; /* Space between list items */}
 
-    section ul li img {
-        margin-right: 10px;
-        width: 350px; 
-        height: 350px;} 
-
+    section img {text-align: center;
+        width: 450px; 
+        height: 450px;} 
+        .center-image {
+            display: block; /* Make the image a block element */
+            margin: 0 auto; /* Center the image horizontally */}
 footer {
     padding: 10px 0;}
 
