@@ -80,12 +80,17 @@ section h2 {
     padding-left: 25px; /* Adjust the space for the icon */
 }
 .centered-list li::before {
-    content: "\f5ca"; /* Font Awesome icon code for fa-umbrella-beach */
-    font-family: 'Font Awesome 5 Free'; /* Specify Font Awesome family */
-    font-weight: 900; /* Font Awesome 5 Free Solid weight */
+    content: "";
+    display: inline-block;
+    width: 20px; /* Width of the bullet image */
+    height: 20px; /* Height of the bullet image */
+    background-image: url('../images/airplane.jpg'); /* Path to your bullet image */
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     left: 0;
-    color: #a73e05; /* Color of the icon */
+    top: 70%;
+    transform: translateY(-50%);
 }
 section ul {
     list-style: none;
