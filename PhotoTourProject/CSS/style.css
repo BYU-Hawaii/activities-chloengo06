@@ -28,15 +28,15 @@ nav {
     padding: 1em 0;
 }
 nav a {
-    display: inline-block;
     color: #4f3222;
-    text-align: center;
-    padding: 5px 15px;
     text-decoration: none;
-    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
     border-radius: 5px;
-    margin: 8px 4px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    border: 1px solid #4f3222;
+    margin: 5px;
 }
 nav ul {
     list-style: none;
@@ -99,6 +99,27 @@ section ul li {
 }
 
 /* Image Styles */
+img {
+    border: 2px solid #4f3222; /* Border color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+/* Add this to style the image container */
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.image-container img {
+    max-width: 400px; /* Adjust the maximum width of the images */
+    height: auto;
+    border: 2px solid #4f3222; /* Border color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
 section img {
     width: 450px;
     height: 450px;
