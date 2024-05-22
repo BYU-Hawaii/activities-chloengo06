@@ -1,85 +1,123 @@
 /* General Styles */
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
-    color: #4f3222;;
+    color: #4f3222;
     margin: 0;
     padding: 0;
-    background-image: url('../images/vietnam.jpg'); 
+    background-image: url('../images/vietnam.jpg');
     background-size: cover;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+}
 
-
-header, nav, footer {
+/* Header Styles */
+header {
     background-color: #dbceb0;
     color: #4f3222;
     text-align: center;
-    padding: 1em 0;}
+    padding: 1em 0;
+}
+header h1 {
+    margin: 0;
+}
 
-header h1 {margin: 0;}
-h2 {text-align: center;}
-
-nav ul {
+/* Navigation Styles */
+nav {
+    background-color: #dbceb0;
+    overflow: hidden;
+    text-align: center;
+    padding: 1em 0;
+}
+nav a {
+    display: inline-block;
     color: #4f3222;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 8px 4px;
+    transition: background-color 0.3s ease;
+}
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;}
-
+    justify-content: center;
+}
 nav ul li {
-    margin: 0 15px;}
-
+    margin: 0 15px;
+}
 nav ul li a {
     color: #4f3222;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px; /* Adjust padding as needed */
+    padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    display: inline-block; /* Display the link as an inline block */
-    border: 1px solid #4f3222; /* Move border property here */        margin: 5px; /* Add margin to separate links */
+    display: inline-block;
+    border: 1px solid #4f3222;
+    margin: 5px;
+}
+nav ul li a:hover {
+    background-color: #4f3222;
+    color: #dbceb0;
 }
 
-figure {
-    text-align: center; /* Center-align the content of the figure element */}
-
-figcaption {
-    display: block; /* Ensure the figcaption takes up the full width */
-    margin: 0 auto; /* Center the figcaption horizontally */
-    text-align: center; /* Center-align the text within the figcaption */}
-
+/* Section Styles */
 section {
     padding: 20px;
     background: #bbab9b;
     margin: 20px;
-    border-radius: 8px;}
+    border-radius: 8px;
+}
+section h2 {
+    text-align: center;
+}
+.centered-list {
+    text-align: center;
+}
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+section ul li {
+    display: inline-block;
+    margin: 20px;
+}
 
-    .centered-list {text-align: center;}
-    
+/* Image Styles */
+section img {
+    width: 450px;
+    height: 450px;
+    text-align: center;
+}
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
 
-    section ul li {
-        display: flex;
-        flex-direction: column; /* Arrange items in a column */
-        align-items: center; /* Center align the items */
-        margin: 20px 0; /* Space between list items */}
+/* Figure Styles */
+figure {
+    text-align: center;
+}
+figcaption {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
 
-    section img {text-align: center;
-        width: 450px; 
-        height: 450px;} 
-        .center-image {
-            display: block; /* Make the image a block element */
-            margin: 0 auto; /* Center the image horizontally */}
+/* Footer Styles */
 footer {
-    padding: 10px 0;}
+    background-color: #dbceb0;
+    color: #4f3222;
+    text-align: center;
+    padding: 10px 0;
+}
 
-button {
-        display: inline-block;
-        margin: 20px 0;
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #282809;
-        color: rgb(154, 139, 101);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-align: center;}
+/* Utility Classes */
+.hidden {
+    display: none;
+}
