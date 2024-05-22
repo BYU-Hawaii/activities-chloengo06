@@ -83,14 +83,14 @@ section h2 {
 .centered-list li {
     margin: 20px 0;
     position: relative;
-    padding-left: 25px; /* Adjust the space for the icon */
+    padding-left: 25px; 
 }
 .centered-list li::before {
     content: "";
     display: inline-block;
-    width: 20px; /* Width of the bullet image */
-    height: 20px; /* Height of the bullet image */
-    background-image: url('../images/airplane.jpg'); /* Path to your bullet image */
+    width: 20px;
+    height: 20px; 
+    background-image: url('../images/airplane.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -111,25 +111,24 @@ section ul li {
 
 /* Image Styles */
 img {
-    border: 2px solid #4f3222; /* Border color */
-    border-radius: 10px; /* Border radius for rounded corners */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border: 2px solid #4f3222;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-/* Add this to style the image container */
 .image-container {
     display: flex;
-    justify-content: space-around; /* Adjust as needed */
+    justify-content: space-around;
     align-items: center;
-    margin-top: 20px; /* Adjust spacing */
+    margin-top: 20px;
 }
 
 .image-container img {
-    max-width: 400px; /* Adjust the maximum width of the images */
+    max-width: 400px;
     height: auto;
-    border: 2px solid #4f3222; /* Border color */
-    border-radius: 10px; /* Border radius for rounded corners */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
-}
+    border: 2px solid #4f3222;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);}
+
 /* Ingredients List Styles */
 .ingredients-list {
     list-style: none;
@@ -141,17 +140,17 @@ img {
 .ingredients-list li {
     margin: 10px 0;
     position: relative;
-    padding-left: 30px; /* Adjust space for the icon */
+    padding-left: 30px; 
 }
 .ingredients-list li::before {
-    content: "\f184"; /* Unicode for fa-gratipay */
-    font-family: 'Font Awesome 5 Brands'; /* Specify Font Awesome brands family */
-    font-weight: 400; /* Font Awesome Regular weight */
+    content: "\f184";
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400; 
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #4f3222; /* Icon color */
+    color: #4f3222; 
 }
 
 section img {
