@@ -124,6 +124,29 @@ img {
     border-radius: 10px; /* Border radius for rounded corners */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
+/* Ingredients List Styles */
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: left;
+}
+.ingredients-list li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 30px; /* Adjust space for the icon */
+}
+.ingredients-list li::before {
+    content: "\f184"; /* Unicode for fa-gratipay */
+    font-family: 'Font Awesome 5 Brands'; /* Specify Font Awesome brands family */
+    font-weight: 400; /* Font Awesome Regular weight */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4f3222; /* Icon color */
+}
 
 section img {
     width: 350px;
