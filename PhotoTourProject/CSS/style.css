@@ -119,36 +119,6 @@ img {
     border-radius: 10px; /* Border radius for rounded corners */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
-/* Style the ingredients list */
-.ingredients {
-    flex: 1; /* Take up available space */
-    margin-right: 20px; /* Add space between ingredients list and image */
-}
-
-.ingredients p {
-    margin-bottom: 10px;
-}
-
-.ingredients ul {
-    margin-top: 0;
-}
-
-/* Adjust image styles */
-.image-container img {
-    max-width: 450px; /* Adjust the maximum width of the images */
-    height: auto;
-}
-
-/* Add media query to ensure responsiveness */
-@media (max-width: 768px) {
-    .image-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center items vertically */
-    }
-
-    .ingredients {
-        margin-right: 0; /* Remove margin on smaller screens */
-    }
 
 section img {
     width: 450px;
