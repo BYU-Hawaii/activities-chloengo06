@@ -17,7 +17,7 @@ header {
     padding: 1em 0;
 }
 header h1 {
-    margin: 0;
+    margin: 0; font-family: 'DM Serif Display', serif;
 }
 
 /* Navigation Styles */
@@ -74,8 +74,18 @@ section {
 section h2 {
     text-align: center;
 }
-.centered-list {
-    text-align: center;
+.centered-list li {
+    margin: 20px 0;
+    position: relative;
+    padding-left: 25px; /* Adjust the space for the icon */
+}
+.centered-list li::before {
+    content: "\f5ca"; /* Font Awesome icon code for fa-umbrella-beach */
+    font-family: 'Font Awesome 5 Free'; /* Specify Font Awesome family */
+    font-weight: 900; /* Font Awesome 5 Free Solid weight */
+    position: absolute;
+    left: 0;
+    color: #a73e05; /* Color of the icon */
 }
 section ul {
     list-style: none;
