@@ -14,9 +14,6 @@ header {
     background-color: #dbceb0;
     color: #4f3222;
     text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
     padding: 1em 0;
 }
 header h1 {
@@ -28,9 +25,6 @@ nav {
     background-color: #dbceb0;
     overflow: hidden;
     text-align: center;
-    position: fixed;
-    top: 60px; /* Adjust based on the header height */
-    left: 0;
     padding: 1em 0;
 }
 nav a {
