@@ -103,6 +103,13 @@ img {
     float: left;
     margin: 5px;
 }
+
+.clearfix::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
 /* Footer Styles */
 footer {
     background-color: #dbceb0;
