@@ -87,18 +87,22 @@ section img {
     background-color: #dbceb0;
 }
 
+/*
 .float-container {
-    float: right;
-    margin-right: 20px;
-    width: 10%;
-}
-
-.float-left{
     float: left;
     margin-right: 20px;
-    width: 150px;
-}
+    width: 10%;
+} */
 
+.float-left{
+    float: right;
+    margin-right: 20px;
+    width: 100px;
+}
+img {
+    float: left;
+    margin: 5px;
+}
 /* Footer Styles */
 footer {
     background-color: #dbceb0;
