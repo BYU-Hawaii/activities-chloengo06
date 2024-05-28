@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif; text-align: center;
+    color: #4f3222;
+    margin: 0;
+    padding: 0;}
+
+/* Header Styles */
+header {
+    background-color: #dbceb0;
+    color: #4f3222;
+    text-align: center;
+    padding: 1em 0;
+}
+header h1 {
+    margin: 0; font-family: 'DM Serif Display', serif;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #dbceb0;
+    overflow: hidden;
+    text-align: center;
+    padding: 1em 0;
+}
+nav a {
+    color: #4f3222;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    border: 1px solid #4f3222;
+    margin: 5px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* For dropdown positioning */
+}
+nav ul li a {
+    color: #4f3222;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    border: 1px solid #4f3222;
+    margin: 5px;
+}
+nav ul li a:hover {
+    background-color: #4f3222;
+    color: #dbceb0;
+}
+/* Dropdown Menu Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dbceb0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 20;
+    min-width: 160px;
+}
+.dropdown-content a {
+    color: #4f3222;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #4f3222;
+    color: #dbceb0;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Section Styles */
+section {
+    padding: 20px;
+    background: #bbab9b;
+    margin: 20px;
+    border-radius: 8px;
+    z-index: 1; /* Ensure section is below nav and dropdown */
+    position: relative; /* Ensure z-index works */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #dbceb0;
+    color: #4f3222;
+    text-align: center;
+    padding: 10px 0;
+}
+
