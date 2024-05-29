@@ -1,8 +1,7 @@
 body {
   background-color: forestgreen;
   margin: 0;
-  font-family: "Gil Sans";
-}
+  font-family: "Gill Sans", sans-serif;
 
 header {
   background-color: Gold;
@@ -55,7 +54,7 @@ main {
   padding: 50px;
 }
 
-garden {
+#garden {
   border: 5px solid brown;
   border-radius: 30px;
   box-shadow: 5px 5px 15px grey;
