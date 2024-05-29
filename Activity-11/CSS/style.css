@@ -8,8 +8,8 @@
 }
 
 .grid-item {
-    background-color: bisque;
-    color: black;
+    background-color: #dbceb0;
+    color: #4f3222;
     text-align: center;
     font-size: 15px;
     border: 1px solid rgb(114, 28, 28);
@@ -29,4 +29,29 @@
 
 .item4 {
     grid-column: 4/5;
+}
+
+/* Extra */ 
+header {
+    background-color: #dbceb0;
+    color: #4f3222;
+    text-align: center;
+    padding: 1em 0;
+}
+header h2 {
+    margin: 0; font-family: 'DM Serif Display', serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #dbceb0 ;
+}
+.column {
+    flex: 2;
+    margin: 10px;
+    padding: 20px;
+    background-color: beige;
+    border: 2px burlywood;
 }
