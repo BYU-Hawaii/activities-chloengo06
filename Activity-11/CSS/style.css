@@ -55,3 +55,9 @@ header h2 {
     background-color: beige;
     border: 2px burlywood;
 }
+footer {
+    background-color: #dbceb0;
+    color: #4f3222;
+    text-align: center;
+    padding: 10px 0;
+}
