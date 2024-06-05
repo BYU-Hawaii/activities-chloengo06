@@ -1,20 +1,18 @@
-<style> 
-        p {color: rgba(0, 0, 255, 0.881);}
-        body {background-color: #d1a21f;font-family: 'Roboto', sans-serif; /* Apply Google Font to body */}
-        header {background-color: darksalmon;}
-        h1 {color: #e012d3; text-align: center;}
-        #mainHeader {color: cornflowerblue; text-align: center;}
-        .highlight { background-color: yellow; text-align: center;}
-        section {margin: 0 auto; width: 80%;}
-        img {width: 100%; border: 3px solid pink; border-radius: 15px; box-shadow: 5px 5px 15px grey;}
-        footer {background-color: darksalmon;}
-        /* Add a border and padding to the section - new rule 1 */
-        section {border: 2px solid #e012d3; padding: 15px; background-color: #fffbea;}
-        /* Add styling for h3 elements - new rule 2 */
-        h3 {font-family: 'Arial', sans-serif; color: #333; text-transform: uppercase; letter-spacing: 1px;}
-        /* Style for a new class to emphasize text - new rule 3*/
-        .emphasis {font-style: italic;color: #ff4500; background-color: #fff7e6; border-radius: 5px;}
-</style>
+p {color: rgba(0, 0, 255, 0.881);}
+body {background-color: #d1a21f;font-family: 'Roboto', sans-serif; /* Apply Google Font to body */}
+header {background-color: darksalmon;}   
+h1 {color: #e012d3; text-align: center;}
+#mainHeader {color: cornflowerblue; text-align: center;}
+.highlight { background-color: yellow; text-align: center;}
+section {margin: 0 auto; width: 80%;}
+img {width: 100%; border: 3px solid pink; border-radius: 15px; box-shadow: 5px 5px 15px grey;}
+footer {background-color: darksalmon;}
+/* Add a border and padding to the section - new rule 1 */
+section {border: 2px solid #e012d3; padding: 15px; background-color: #fffbea;}
+/* Add styling for h3 elements - new rule 2 */
+h3 {font-family: 'Arial', sans-serif; color: #333; text-transform: uppercase; letter-spacing: 1px;}
+/* Style for a new class to emphasize text - new rule 3*/
+.emphasis {font-style: italic;color: #ff4500; background-color: #fff7e6; border-radius: 5px;}
 
 body {
     font-size: 18px;
