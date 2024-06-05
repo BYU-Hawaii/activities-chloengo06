@@ -1,3 +1,74 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif; text-align: center;
+    color: #4f3222;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/vietnam.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    background-color: #dbceb0;
+    color: #4f3222;
+    text-align: center;
+    padding: 1em 0;
+}
+header h1 {
+    margin: 0; font-family: 'DM Serif Display', serif;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #dbceb0;
+    overflow: hidden;
+    text-align: center;
+    padding: 1em 0;
+}
+/* Section Styles */
+section {
+    padding: 20px;
+    background-color: #bbab9b;
+    margin: 20px;
+    border-radius: 8px;
+}
+section h2 {
+    text-align: center;
+}
+
+/* Image Styles */
+section img {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+}
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Figure Styles */
+figure {
+    text-align: center;
+}
+figcaption {
+    display: block;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+/* Footer Styles */
+footer {
+    background-color: #dbceb0;
+    color: #4f3222;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
 .menu {
     list-style-type: none;
     padding: 0;
