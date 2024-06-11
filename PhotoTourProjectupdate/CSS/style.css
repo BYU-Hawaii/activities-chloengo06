@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: #4f3222;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/vietnam.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    gap: 10px;
+}
+
+/* Header Styles */
+.header {
+    grid-area: header;
+    background-color: #dbceb0;
+    color: #4f3222;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+.header h1 {
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+}
+.header i {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: #4f3222;
+}
+
+/* Navigation Styles */
+.nav {
+    grid-area: nav;
+    background-color: #dbceb0;
+    text-align: center;
+    padding: 1em 0;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav ul li {
+    margin: 0 10px;
+}
+.nav ul li a {
+    color: #4f3222;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    border: 1px solid #4f3222;
+}
+.nav ul li a:hover {
+    background-color: #4f3222;
+    color: #dbceb0;
+}
+
+/* Main Styles */
+.main {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Column Styles */
+.column {
+    flex: 1;
+    min-width: 300px;
+    background-color: #bbab9b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.gallery img {
+    max-width: 100%;
+    border: 2px solid #4f3222;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Ingredients List Styles */
+.sidebar {
+    flex: 1;
+    min-width: 300px;
+    background-color: #bbab9b;
+    padding: 20px;
+    border-radius: 8px;
+}
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ingredients-list li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 30px; 
+}
+.ingredients-list li::before {
+    content: "\f184";
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4f3222; 
+}
+
+/* Footer Styles */
+.footer {
+    grid-area: footer;
+    background-color: #dbceb0;
+    color: #4f3222;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main sidebar"
+            "footer footer";
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        flex-basis: 30%;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            "main main sidebar"
+            "footer footer footer";
+    }
+}
