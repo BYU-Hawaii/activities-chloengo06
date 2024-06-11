@@ -105,7 +105,7 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 main figure img {
-    max-width: 40%; /* Adjust the size as needed */
+    max-width: 40%; 
 }
 
 /* Sidebar Styles */
