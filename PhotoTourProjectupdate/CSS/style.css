@@ -6,7 +6,6 @@ body {
     padding: 0;
     background-image: url('../images/vietnam.jpg');
     background-size: cover;
-    background-attachment: fixed;
 }
 
 /* Grid Container */
@@ -106,33 +105,13 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Ingredients List Styles */
+/* Sidebar Styles */
 .sidebar {
     flex: 1;
     min-width: 300px;
     background-color: #bbab9b;
     padding: 20px;
     border-radius: 8px;
-}
-.ingredients-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.ingredients-list li {
-    margin: 10px 0;
-    position: relative;
-    padding-left: 30px; 
-}
-.ingredients-list li::before {
-    content: "\f184";
-    font-family: 'Font Awesome 5 Brands';
-    font-weight: 400; 
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #4f3222; 
 }
 
 /* Footer Styles */
@@ -148,27 +127,19 @@ body {
 @media (min-width: 600px) {
     .grid-container {
         grid-template-areas: 
-            "header header"
-            "nav nav"
-            "main sidebar"
-            "footer footer";
-    }
-
-    .main {
-        flex-direction: row;
-    }
-
-    .sidebar {
-        flex-basis: 30%;
+            "header"
+            "nav"
+            "main"
+            "footer";
     }
 }
 
 @media (min-width: 900px) {
     .grid-container {
         grid-template-areas: 
-            "header header header"
-            "nav nav nav"
-            "main main sidebar"
-            "footer footer footer";
+            "header header"
+            "nav nav"
+            "main sidebar"
+            "footer footer";
     }
 }
