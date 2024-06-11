@@ -126,7 +126,7 @@ main figure img {
     padding: 10px 0;
 }
 
-/* Responsive Styles for Tablet*/
+/* Responsive Styles for Tablet and Desktop */
 @media (min-width: 600px) {
     .grid-container {
         grid-template-areas: 
@@ -137,7 +137,7 @@ main figure img {
     }
 }
 
-/* Large Devices (Desktops) */
+/* Responsive Styles for Desktop */
 @media (min-width: 1024px) {
     nav ul {
         justify-content: space-between;
