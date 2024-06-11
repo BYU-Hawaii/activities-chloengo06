@@ -104,6 +104,9 @@ body {
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+main figure img {
+    max-width: 40%; /* Adjust the size as needed */
+}
 
 /* Sidebar Styles */
 .sidebar {
@@ -123,7 +126,7 @@ body {
     padding: 10px 0;
 }
 
-/* Responsive Styles */
+/* Responsive Styles for Tablet*/
 @media (min-width: 600px) {
     .grid-container {
         grid-template-areas: 
@@ -134,12 +137,23 @@ body {
     }
 }
 
-@media (min-width: 900px) {
-    .grid-container {
-        grid-template-areas: 
-            "header header"
-            "nav nav"
-            "main sidebar"
-            "footer footer";
+/* Large Devices (Desktops) */
+@media (min-width: 1024px) {
+    nav ul {
+        justify-content: space-between;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+    }
+
+    section {
+        grid-column: 2 / 3;
+    }
+
+    footer {
+        position: static;
     }
 }
