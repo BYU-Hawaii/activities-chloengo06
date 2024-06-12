@@ -15,6 +15,7 @@ document.getElementById('randomColor').addEventListener('click', function() {
 
 function displayColor(color) {
     document.getElementById('displayArea').style.backgroundColor = color;
+    document.getElementById('colorValue').textContent = color;
 }
 
 function addToHistory(color) {
