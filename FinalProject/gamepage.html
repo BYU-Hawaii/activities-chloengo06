@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Fun Kids Interactive</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="grid-container">
+    <header class="header">
+        <h1>Games</h1>
+    </header>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutpage.html">About</a></li>
+            <li><a href="gamepage.html">Games</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="games">
+            <h2>Play Our Games</h2>
+            <p>Choose from a variety of fun and educational games below:</p>
+            
+            <div class="game">
+                <h3>Math Adventure</h3>
+                <p>Solve puzzles and complete challenges to advance through the levels.</p>
+                <button onclick="startGame('MathAdventure')">Play Now</button>
+            </div>
+            
+            <div class="game">
+                <h3>Word Wizard</h3>
+                <p>Enhance your vocabulary with fun word games.</p>
+                <button onclick="startGame('WordWizard')">Play Now</button>
+            </div>
+            
+            <div class="game">
+                <h3>Memory Master</h3>
+                <p>Improve your memory with matching games and more.</p>
+                <button onclick="startGame('MemoryMaster')">Play Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Fun Kids Interactive. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function startGame(gameName) {
+            alert(gameName + ' will start soon!');
+        }
+    </script>
+</body>
+</html>
