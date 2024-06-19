@@ -9,7 +9,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     var usernameValid = /^[a-zA-Z0-9]{5,}$/.test(username); // Username should be at least 5 characters long and contain only letters and numbers
     var emailValid = /^[^@]+@\w+(\.\w+)+\w$/.test(email); // Simple email pattern check
     var passwordValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(password); // Password should be at least 8 characters long, contain numbers and both lowercase and uppercase letters
-    var phoneValid = /^\+?\d{1,4}?[-.\s]?(\d{1,3}[-.\s]?){1,4}$/.test(phone); // Phone number pattern check, allowing for country codes and various formats
+    var phoneValid = /^\+?[1-9]\d{1,14}$/.test(phone); // Phone number pattern check for international numbers (E.164 format)
 
     document.getElementById('usernameFeedback').style.display = usernameValid ? 'none' : 'block';
     document.getElementById('emailFeedback').style.display = emailValid ? 'none' : 'block';
