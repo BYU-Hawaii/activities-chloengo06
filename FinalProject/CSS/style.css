@@ -1,5 +1,6 @@
+/* Base styles for mobile-first design */
 body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Comic Neue', sans-serif;
     margin: 0;
     padding: 0;
     display: grid;
@@ -27,7 +28,7 @@ body {
 }
 
 .nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -47,7 +48,7 @@ body {
     background-color: #fff2cc;
 }
 
-.intro, .about, .games {
+.intro, .about, .games, .educational-content, .fun-facts-content, .feedback-form {
     margin-bottom: 1em;
 }
 
@@ -61,12 +62,25 @@ body {
 
 .gallery {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gallery img {
-    width: 30%;
+    width: 100%;
+    max-width: 300px;
     margin-bottom: 1em;
     border-radius: 10px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    .gallery {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .gallery img {
+        width: 30%;
+    }
 }
