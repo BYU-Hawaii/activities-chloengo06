@@ -59,7 +59,27 @@ body {
     border-radius: 10px;
     text-align: center;
 }
-
+.memory-game {
+    width: 640px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.memory-card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+    user-select: none;
+}
+.memory-card.flipped {
+    background-color: #fff;
+}
 .gallery {
     display: flex;
     flex-direction: column;
