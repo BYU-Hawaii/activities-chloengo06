@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll('.memory-card');
+const checkMatchButton = document.getElementById('checkMatchButton');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -16,12 +17,13 @@ function flipCard() {
     }
 
     secondCard = this;
-    checkForMatch();
+    checkMatchButton.disabled = false;
 }
 
 function checkForMatch() {
     let isMatch = firstCard.dataset.card === secondCard.dataset.card;
     isMatch ? disableCards() : unflipCards();
+    checkMatchButton.disabled = true;
 }
 
 function disableCards() {
@@ -48,3 +50,4 @@ function resetBoard() {
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+checkMatchButton.addEventListener('click', checkForMatch);
