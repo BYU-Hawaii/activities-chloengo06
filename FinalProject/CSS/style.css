@@ -9,40 +9,67 @@ body {
     min-height: 100vh;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'nav'
+        'main'
+        'footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
 .header {
-    background-color: #ffeb3b;
+    grid-area: header;
+    background-color: #cfba44;
     padding: 20px;
     text-align: center;
 }
 
-.header h1 {
-    margin: 0;
-    color: #ff4081;
+.nav {
+    grid-area: nav;
+    background-color: #69480e;
 }
 
 .nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    margin: 0;
 }
 
 .nav li {
-    margin: 0 15px;
+    margin: 10px 0;
 }
 
 .nav a {
+    color: white;
     text-decoration: none;
-    color: #ff4081;
-    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 10px;
 }
 
 .main {
-    flex: 1;
+    grid-area: main;
+    background-color: #cfba44;
     padding: 20px;
+}
+
+.column {
+    margin-bottom: 20px;
+}
+
+.gallery {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .game-section {
