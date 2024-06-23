@@ -9,53 +9,134 @@ body {
     min-height: 100vh;
 }
 
-header {
+.header {
     background-color: #ffeb3b;
     padding: 20px;
     text-align: center;
 }
 
-header h1 {
+.header h1 {
     margin: 0;
     color: #ff4081;
 }
 
-nav ul {
+.nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
-nav li {
+.nav li {
     margin: 0 15px;
 }
 
-nav a {
+.nav a {
     text-decoration: none;
     color: #ff4081;
     font-weight: bold;
 }
 
-main {
+.main {
     flex: 1;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main section {
-    max-width: 800px;
-    margin: 0 auto;
+.game-section {
     text-align: center;
 }
 
-footer {
+#tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffeb3b;
+    font-size: 2em;
+    cursor: pointer;
+}
+.fun-facts-section {
+    text-align: center;
+}
+
+.fun-facts-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.feedback-section {
+    text-align: center;
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedback-form label {
+    margin: 10px 0 5px;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedback-form button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#feedback-form button:hover {
+    background-color: #e91e63;
+}
+
+.education-section {
+    text-align: center;
+}
+
+.education-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-section h2 {
+    color: #ff4081;
+}
+
+.about-section p, .about-section ul {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+}
+.footer {
     background-color: #ffeb3b;
     text-align: center;
     padding: 10px;
     color: #ff4081;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }

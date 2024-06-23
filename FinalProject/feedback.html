@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="scripts/feedback.js" defer></script>
 </head>
-<body>
-    <header>
+<body class="grid-container">
+    <header class="header">
         <h1>Feedback</h1>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="game.html">Game</a></li>
@@ -21,8 +20,9 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+
+    <main class="main">
+        <section class="feedback-section">
             <h2>We value your feedback!</h2>
             <form id="feedback-form">
                 <label for="name">Name:</label>
@@ -38,8 +38,11 @@
             </form>
         </section>
     </main>
-    <footer>
+
+    <footer class="footer">
         <p>&copy; 2024 FunLand. All rights reserved.</p>
     </footer>
+
+    <script src="scripts/feedback.js"></script>
 </body>
 </html>

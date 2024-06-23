@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Generated Tic Tac Toe</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="scripts/game.js" defer></script>
 </head>
-<body>
-    <header>
+<body class="grid-container">
+    <header class="header">
         <h1>Play Tic Tac Toe</h1>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="game.html">Game</a></li>
@@ -21,16 +20,20 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+
+    <main class="main">
+        <section class="game-section">
             <h2>Tic Tac Toe</h2>
             <div id="tic-tac-toe-board">
                 <!-- Tic Tac Toe Board will be generated here by JavaScript -->
             </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="footer">
         <p>&copy; 2024 FunLand. All rights reserved.</p>
     </footer>
+
+    <script src="scripts/game.js"></script>
 </body>
 </html>
