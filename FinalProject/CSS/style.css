@@ -1,106 +1,61 @@
-/* Base styles for mobile-first design */
 body {
-    font-family: 'Comic Neue', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fce4ec;
+    color: #333;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr;
-    height: 100vh;
-}
-
-.header, .footer {
-    background-color: #ffcc00;
-    text-align: center;
-    padding: 1em;
-}
-
-.nav {
-    background-color: #0080ff;
-    padding: 1em;
-    text-align: center;
-}
-
-.nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-style: italic;
-}
-
-.nav ul li a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
-}
-
-.main {
-    padding: 1em;
-    background-color: #fff2cc;
-}
-
-.intro, .about, .games, .educational-content, .fun-facts-content, .feedback-form {
-    margin-bottom: 1em;
-}
-
-.feature, .game {
-    background-color: #ffee99;
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 10px;
-    text-align: center;
-}
-.memory-game {
-    width: 640px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-}
-.memory-card {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
-    cursor: pointer;
-    user-select: none;
-}
-.memory-card.flipped {
-    background-color: #fff;
-}
-.gallery {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 100vh;
 }
 
-.gallery img {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 1em;
-    border-radius: 10px;
+header {
+    background-color: #ffeb3b;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Media query for larger screens */
-@media (min-width: 600px) {
-    .gallery {
-        flex-direction: row;
-        justify-content: space-around;
-    }
+header h1 {
+    margin: 0;
+    color: #ff4081;
+}
 
-    .gallery img {
-        width: 30%;
-    }
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff4081;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+main section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background-color: #ffeb3b;
+    text-align: center;
+    padding: 10px;
+    color: #ff4081;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
