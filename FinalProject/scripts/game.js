@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const cellElement = document.createElement('div');
             cellElement.classList.add('cell');
             cellElement.dataset.index = index;
-            cellElement.innerText = cell || '';
+            cellElement.dataset.player = cell || ''; // Use data attribute for X or O
             cellElement.addEventListener('click', handleCellClick);
             board.appendChild(cellElement);
         });

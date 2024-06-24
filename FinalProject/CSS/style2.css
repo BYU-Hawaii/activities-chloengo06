@@ -1,4 +1,4 @@
-
+/* General styles */
 body {
     font-family: 'DM Serif Display', serif;
     margin: 0;
@@ -79,50 +79,6 @@ body {
     border-radius: 10px;
 }
 
-.tic-tac-toe-board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 10px;
-    max-width: 100%; 
-    width: 100%;
-    margin: 0 auto;
-    background-color: #E6D18D;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.cell {
-    background-color: #FFF;
-    border: 2px solid #000;
-    width: 100%; 
-    height: 0; 
-    padding-top: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    cursor: pointer;
-    text-align: center;
-    line-height: 1;
-}
-
-
-.column {
-    margin-bottom: 20px;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 .footer {
     grid-area: footer;
     background-color: #E6D18D;
@@ -131,20 +87,67 @@ body {
     padding: 10px;
 }
 
-.game-section {
+/* Form styles */
+form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px 0; /* Added margin for spacing */
+}
+
+.form-group {
+    display: flex;
+    flex-basis: 48%;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    padding: 20px; 
-    text-align: center; 
+    margin-bottom: 20px; /* Added margin-bottom for spacing */
 }
 
-.game-section h2 {
-    margin: 20px 0; 
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
-/* For screens wider than 768px */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    flex-basis: 100%;
+    padding: 15px;
+    background-color: #2B9E9D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #217878;
+}
+
+.feedback {
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
+
+/* Feedback message */
+.valid-feedback {
+    color: green;
+}
+
+/* Media Queries */
 @media (min-width: 768px) {
     .nav ul {
         flex-direction: row;
@@ -158,52 +161,8 @@ body {
         max-width: 80%;
         margin: 0 auto;
     }
-
-    .gallery {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .gallery img,
-    figure img {
-        width: calc(50% - 5px);
-    }
-}
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.form-group {
-    display: flex;
-    flex-basis: 48%;
-    flex-direction: column;
-}
-
-label {
-    display: inline-block;
-    margin-bottom: 10px;
-    width: 100%;
-    flex: 1;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="tel"],
-textarea,
-select {
-    width: calc(100% - 10px);
-    flex: 2;
-}
-
-button {
-    flex-basis: 100%;
-}
-
-/* For screens wider than 1024px */
 @media (min-width: 1024px) {
     .grid-container {
         grid-template-areas: 
@@ -216,10 +175,5 @@ button {
 
     .main {
         max-width: 70%;
-    }
-
-    .gallery img,
-    figure img {
-        width: calc(33.33% - 10px);
     }
 }
