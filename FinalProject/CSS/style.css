@@ -33,12 +33,14 @@ body {
 }
 
 .header h1 {
-    margin: 0 20px;
+    margin: 0; /* Adjusted margin to remove horizontal spacing */
+    display: flex; /* Added to ensure emojis and text are in a row */
+    align-items: center; /* Center vertically */
 }
 
 .emoji {
     font-size: 2rem;
-    margin: 0 10px;
+    margin: 0 10px; /* Keep emojis spaced */
 }
 
 .nav {
