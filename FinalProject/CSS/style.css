@@ -3,11 +3,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(/FinalProject/images/wallpaper.jpg);
+    background-image: url("/FinalProject/images/wallpaper.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
 }
 
 .grid-container {
