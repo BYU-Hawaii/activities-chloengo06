@@ -1,12 +1,8 @@
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #fce4ec;
-    color: #333;
+    font-family: 'DM Serif Display', serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .grid-container {
@@ -22,20 +18,23 @@ body {
 
 .header {
     grid-area: header;
-    background-color: #cfba44;
+    background-color: #E6D18D;
     padding: 20px;
     text-align: center;
 }
 
 .nav {
     grid-area: nav;
-    background-color: #69480e;
+    background-color: #2B9E9D;
 }
 
 .nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav li {
@@ -43,7 +42,7 @@ body {
 }
 
 .nav a {
-    color: white;
+    color: #F78F51;
     text-decoration: none;
     text-align: center;
     display: block;
@@ -52,8 +51,11 @@ body {
 
 .main {
     grid-area: main;
-    background-color: #cfba44;
+    background-color: #E6D18D;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .column {
@@ -72,98 +74,81 @@ body {
     object-fit: cover;
 }
 
-.game-section {
-    text-align: center;
-}
-
-#tic-tac-toe-board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 10px;
-    margin-top: 20px;
-}
-
-.cell {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffeb3b;
-    font-size: 2em;
-    cursor: pointer;
-}
-.fun-facts-section {
-    text-align: center;
-}
-
-.fun-facts-section img {
-    max-width: 100%;
-    height: auto;
-}
-
-.feedback-section {
-    text-align: center;
-}
-
-#feedback-form {
+figure {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#feedback-form label {
-    margin: 10px 0 5px;
-}
-
-#feedback-form input,
-#feedback-form textarea {
+figure img {
     width: 100%;
-    max-width: 300px;
-    padding: 10px;
+    height: auto;
+    object-fit: cover;
+    max-width: 500px; 
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-#feedback-form button {
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
 }
 
-#feedback-form button:hover {
-    background-color: #e91e63;
-}
-
-.education-section {
-    text-align: center;
-}
-
-.education-section img {
-    max-width: 100%;
-    height: auto;
-}
-
-.about-section h2 {
-    color: #ff4081;
-}
-
-.about-section p, .about-section ul {
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
-
-.about-section img {
-    max-width: 100%;
-    height: auto;
-}
 .footer {
-    background-color: #ffeb3b;
+    grid-area: footer;
+    background-color: #E6D18D;
+    color: white;
     text-align: center;
     padding: 10px;
-    color: #ff4081;
+}
+
+/* For screens wider than 768px */
+@media (min-width: 768px) {
+    .nav ul {
+        flex-direction: row;
+    }
+
+    .nav li {
+        margin: 0 10px;
+    }
+
+    .main {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery img,
+    figure img {
+        width: calc(50% - 5px);
+    }
+}
+
+/* For screens wider than 1024px */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-areas: 
+            'header header'
+            'nav nav'
+            'main main'
+            'footer footer';
+        justify-content: center;
+    }
+
+    .main {
+        max-width: 70%;
+    }
+
+    .gallery img,
+    figure img {
+        width: calc(33.33% - 10px);
+    }
 }
