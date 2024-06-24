@@ -33,19 +33,21 @@ body {
 }
 
 .header h1 {
-    margin: 0; /* Adjusted margin to remove horizontal spacing */
-    display: flex; /* Added to ensure emojis and text are in a row */
-    align-items: center; /* Center vertically */
+    margin: 0; 
+    display: flex; 
+    align-items: center; 
+    color: #20B2AA;
 }
 
 .emoji {
     font-size: 2rem;
-    margin: 0 10px; /* Keep emojis spaced */
+    margin: 0 10px; 
 }
 
 .nav {
     grid-area: nav;
     background-color: #2B9E9D;
+    text-align: center;
 }
 
 .nav ul {
@@ -63,7 +65,7 @@ body {
 }
 
 .nav a {
-    color: black;
+    color: #ffd700;
     text-decoration: none;
     text-align: center;
     display: block;
@@ -173,7 +175,7 @@ body {
 .footer {
     grid-area: footer;
     background-color: #E6D18D;
-    color: black;
+    color: #20B2AA;
     text-align: center;
     padding: 10px;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
