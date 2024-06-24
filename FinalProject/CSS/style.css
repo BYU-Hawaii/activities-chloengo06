@@ -102,8 +102,24 @@ body {
     justify-content: center;
     font-size: 2rem;
     cursor: pointer;
+    text-align: center;
+    line-height: 1;
+}
+#play-again-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #2B9E9D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+#play-again-button:hover {
+    background-color: #238b8a;
+}
 
 .column {
     margin-bottom: 20px;

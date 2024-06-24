@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const board = document.getElementById('tic-tac-toe-board');
+    const playAgainButton = document.getElementById('play-again-button');
     const size = 8;  // Define the size of the board
     let currentPlayer = 'X';
-    const cells = Array(size * size).fill(null);
-    
+    let cells = Array(size * size).fill(null);
+
     function renderBoard() {
         board.innerHTML = '';
         board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;  // Adjust grid template columns
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderBoard();
         if (checkWin()) {
             setTimeout(() => alert(`Player ${cells[index]} wins!`), 100);
+            playAgainButton.style.display = 'block';
         }
     }
 
@@ -68,6 +70,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return patterns;
     }
+
+    playAgainButton.addEventListener('click', () => {
+        cells = Array(size * size).fill(null);
+        currentPlayer = 'X';
+        renderBoard();
+        playAgainButton.style.display = 'none';
+    });
 
     renderBoard();
 });
