@@ -218,6 +218,65 @@ body {
         width: calc(50% - 5px);
     }
 }
+/* Form styles */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px 0; 
+}
+
+.form-group {
+    display: flex;
+    flex-basis: 48%;
+    flex-direction: column;
+    margin-bottom: 20px; 
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    flex-basis: 100%;
+    padding: 15px;
+    background-color: #2B9E9D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #217878;
+}
+
+.feedback {
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
+
+/* Feedback message */
+.valid-feedback {
+    color: green;
+}
 
 /* For screens wider than 1024px */
 @media (min-width: 1024px) {
