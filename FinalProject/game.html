@@ -12,7 +12,9 @@
 </head>
 <body class="grid-container">
     <header class="header">
-        <h1>Fun Games </h1>
+        <span class="emoji">🎉</span>
+        <h1>Fun Games</h1>
+        <span class="emoji">🎈</span>
     </header>
     <nav class="nav">
         <ul>
@@ -23,12 +25,11 @@
             <li><a href="funfacts.html">Fun Facts</a></li>
         </ul>
     </nav>
-    </header>
 
     <main class="main">
         <section class="game-section">
             <div class="text-container">
-                <h2>Tic Tac Toe</h2>
+                <h2><span class="emoji">🎮</span> Tic Tac Toe <span class="emoji">🕹️</span></h2>
                 <p>Tic Tac Toe is a classic two-player game where players take turns marking spaces in an 8x8 grid. 
                     One player uses "X," and the other uses "O." The goal is to be the first to place four of their 
                     marks in a horizontal, vertical, or diagonal row. Players alternate turns, strategically placing 
@@ -39,6 +40,8 @@
             <div id="tic-tac-toe-board" class="tic-tac-toe-board">
                 <!-- Tic Tac Toe Board will be generated here by JavaScript -->
             </div>
+            <button id="choose-x-button">Play as X</button>
+            <button id="choose-o-button">Play as O</button>
             <button id="play-again-button" style="display: none;">Play Again</button>
         </section>
     </main>

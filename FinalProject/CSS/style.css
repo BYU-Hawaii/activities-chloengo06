@@ -25,6 +25,20 @@ body {
     background-color: #E6D18D;
     padding: 20px;
     text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0 20px;
+}
+
+.emoji {
+    font-size: 2rem;
+    margin: 0 10px;
 }
 
 .nav {
@@ -76,11 +90,12 @@ body {
     padding: 20px;
     background-color: rgba(230, 209, 141, 0.9); 
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tic-tac-toe-board {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(8, 1fr); 
     grid-gap: 10px;
     max-width: 100%; 
     width: 100%;
@@ -114,7 +129,10 @@ body {
     font-size: 2rem;
     line-height: 1;
 }
-#play-again-button {
+
+#play-again-button,
+#choose-x-button,
+#choose-o-button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1rem;
@@ -123,11 +141,15 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#play-again-button:hover {
+#play-again-button:hover,
+#choose-x-button:hover,
+#choose-o-button:hover {
     background-color: #238b8a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .column {
@@ -152,6 +174,7 @@ body {
     color: black;
     text-align: center;
     padding: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .game-section {

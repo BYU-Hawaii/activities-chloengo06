@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const board = document.getElementById('tic-tac-toe-board');
     const playAgainButton = document.getElementById('play-again-button');
+    const chooseXButton = document.getElementById('choose-x-button');
+    const chooseOButton = document.getElementById('choose-o-button');
     const size = 8;  // Define the size of the board
+    let playerSymbol = 'X';
+    let aiSymbol = 'O';
     let currentPlayer = 'X';
     let cells = Array(size * size).fill(null);
 
@@ -20,12 +24,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleCellClick(event) {
         const index = event.target.dataset.index;
-        if (cells[index] || checkWin()) return;
+        if (cells[index] || checkWin() || currentPlayer !== playerSymbol) return;
         cells[index] = currentPlayer;
-        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        currentPlayer = aiSymbol;
         renderBoard();
         if (checkWin()) {
             setTimeout(() => alert(`Player ${cells[index]} wins!`), 100);
+            playAgainButton.style.display = 'block';
+        } else {
+            setTimeout(aiMove, 500); // AI makes a move after 500ms
+        }
+    }
+
+    function aiMove() {
+        let emptyIndices = cells.map((cell, index) => cell === null ? index : null).filter(index => index !== null);
+        if (emptyIndices.length === 0 || checkWin()) return;
+        let randomIndex = emptyIndices[Math.floor(Math.random() * emptyIndices.length)];
+        cells[randomIndex] = aiSymbol;
+        currentPlayer = playerSymbol;
+        renderBoard();
+        if (checkWin()) {
+            setTimeout(() => alert(`Player ${cells[randomIndex]} wins!`), 100);
             playAgainButton.style.display = 'block';
         }
     }
@@ -71,12 +90,29 @@ document.addEventListener('DOMContentLoaded', () => {
         return patterns;
     }
 
-    playAgainButton.addEventListener('click', () => {
-        cells = Array(size * size).fill(null);
+    function startGame(symbol) {
+        playerSymbol = symbol;
+        aiSymbol = symbol === 'X' ? 'O' : 'X';
         currentPlayer = 'X';
+        cells = Array(size * size).fill(null);
         renderBoard();
         playAgainButton.style.display = 'none';
+        chooseXButton.style.display = 'none';
+        chooseOButton.style.display = 'none';
+    }
+
+    playAgainButton.addEventListener('click', () => {
+        startGame(playerSymbol);
     });
 
-    renderBoard();
+    chooseXButton.addEventListener('click', () => {
+        startGame('X');
+    });
+
+    chooseOButton.addEventListener('click', () => {
+        startGame('O');
+    });
+
+    chooseXButton.style.display = 'block';
+    chooseOButton.style.display = 'block';
 });
