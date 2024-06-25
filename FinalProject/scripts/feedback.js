@@ -26,9 +26,15 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
     if (formValid) {
         document.getElementById('feedbackSubmissionFeedback').textContent = 'Thank you for your feedback!';
         document.getElementById('feedbackSubmissionFeedback').style.display = 'block';
+
+        // Fireworks effect
+        startFireworks();
+
         // Here you can also handle the form submission, e.g. send data to the server
     } else {
         document.getElementById('feedbackSubmissionFeedback').textContent = '';
         document.getElementById('feedbackSubmissionFeedback').style.display = 'none';
     }
 });
+
+

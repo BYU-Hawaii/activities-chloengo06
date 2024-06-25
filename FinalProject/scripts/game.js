@@ -39,60 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function aiMove() {
         let emptyIndices = cells.map((cell, index) => cell === null ? index : null).filter(index => index !== null);
         if (emptyIndices.length === 0 || checkWin()) return;
-
-        let bestMove = getBestMove(cells);
-        cells[bestMove] = aiSymbol;
+        let randomIndex = emptyIndices[Math.floor(Math.random() * emptyIndices.length)];
+        cells[randomIndex] = aiSymbol;
         currentPlayer = playerSymbol;
         renderBoard();
         if (checkWin()) {
-            setTimeout(() => alert(`Player ${aiSymbol} wins!`), 100);
+            setTimeout(() => alert(`Player ${cells[randomIndex]} wins!`), 100);
             playAgainButton.style.display = 'block';
         }
-    }
-
-    function getBestMove(board) {
-        let bestScore = -Infinity;
-        let move = null;
-
-        // Evaluate each possible move
-        for (let i = 0; i < size * size; i++) {
-            if (board[i] === null) {
-                board[i] = aiSymbol;
-                let score = minimax(board, false, 0);
-                board[i] = null;
-
-                if (score > bestScore) {
-                    bestScore = score;
-                    move = i;
-                }
-            }
-        }
-
-        return move;
-    }
-
-    function minimax(board, isMaximizing, depth) {
-        if (checkWin() && aiSymbol === currentPlayer) {
-            return 1;
-        } else if (checkWin() && playerSymbol === currentPlayer) {
-            return -1;
-        } else if (emptyIndices.length === 0) {
-            return 0;
-        }
-
-        let bestScore = isMaximizing ? -Infinity : Infinity;
-
-        for (let i = 0; i < size * size; i++) {
-            if (board[i] === null) {
-                board[i] = isMaximizing ? aiSymbol : playerSymbol;
-                let score = minimax(board, !isMaximizing, depth + 1);
-                board[i] = null;
-
-                bestScore = isMaximizing ? Math.max(score, bestScore) : Math.min(score, bestScore);
-            }
-        }
-
-        return bestScore;
     }
 
     function checkWin() {
@@ -138,17 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function startGame(symbol) {
         playerSymbol = symbol;
-        aiSymbol = symbol === 'X' ? 'O' : 'X';  // Assign opposite symbol for AI
+        aiSymbol = symbol === 'X' ? 'O' : 'X';
         currentPlayer = 'X';
         cells = Array(size * size).fill(null);
         renderBoard();
         playAgainButton.style.display = 'none';
         chooseXButton.style.display = 'none';
         chooseOButton.style.display = 'none';
-
-        if (symbol === aiSymbol) {
-            setTimeout(aiMove, 500); // AI starts if AI plays first
-        }
     }
 
     playAgainButton.addEventListener('click', () => {
@@ -165,12 +115,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     chooseXButton.style.display = 'block';
     chooseOButton.style.display = 'block';
-
-    function shuffle(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
-    }
 });
