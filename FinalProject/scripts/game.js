@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (checkWin()) {
             setTimeout(() => alert(`Player ${cells[index]} wins!`), 100);
             playAgainButton.style.display = 'block';
-        } else {
-            setTimeout(aiMove, 500); // AI makes a move after 500ms
+        } else if (playerSymbol === 'X') {
+            setTimeout(aiMove, 500); // AI makes a move after 500ms only if player is X
         }
     }
 
@@ -99,6 +99,10 @@ document.addEventListener('DOMContentLoaded', () => {
         playAgainButton.style.display = 'none';
         chooseXButton.style.display = 'none';
         chooseOButton.style.display = 'none';
+
+        if (playerSymbol === 'O') {
+            setTimeout(aiMove, 500); // AI makes the first move if player chooses O
+        }
     }
 
     playAgainButton.addEventListener('click', () => {
