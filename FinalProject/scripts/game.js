@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (checkWin()) {
             setTimeout(() => alert(`Player ${cells[index]} wins!`), 100);
             playAgainButton.style.display = 'block';
-        } else if (playerSymbol === 'X') {
-            setTimeout(aiMove, 500); // AI makes a move after 500ms only if player is X
+        } else if (currentPlayer === aiSymbol) {
+            setTimeout(aiMove, 500); // AI makes a move after 500ms only if currentPlayer is AI
         }
     }
 
